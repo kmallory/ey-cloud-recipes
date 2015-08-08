@@ -64,10 +64,10 @@ include_recipe "sidekiq"
 # include_recipe "resque"
 
 #uncomment to run redis.yml recipe
-# include_recipe "redis-yml"
+#include_recipe "redis-yml"
 
 #uncomment to run the resque-scheduler recipe
-# include_recipe "resque-scheduler"
+#include_recipe "resque-scheduler"
 
 #uncomment to run the redis recipe
 include_recipe "redis"
@@ -92,7 +92,7 @@ include_recipe "redis"
 
 #uncomment to include the mysql_administrative_tools recipe
 # additional configuration of this recipe is required
-#include_recipe "mysql_administrative_tools"
+include_recipe "mysql_administrative_tools"
 
 #uncomment to include the Elasticsearch recipe
 #include_recipe "elasticsearch"

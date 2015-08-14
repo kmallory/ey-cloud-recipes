@@ -92,7 +92,7 @@ include_recipe "redis"
 
 #uncomment to include the mysql_administrative_tools recipe
 # additional configuration of this recipe is required
-include_recipe "mysql_administrative_tools"
+#include_recipe "mysql_administrative_tools"
 
 #uncomment to include the Elasticsearch recipe
 #include_recipe "elasticsearch"

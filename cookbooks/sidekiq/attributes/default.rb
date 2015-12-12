@@ -24,5 +24,5 @@ default[:sidekiq] = {
   },
 
   # Verbose
-  :verbose => false
+  :verbose => true
 }

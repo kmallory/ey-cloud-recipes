@@ -4,7 +4,12 @@
 #
 
 if ['util'].include?(node[:instance_role])
-  if node[:name] == 'redis'
+  #if node[:name] == 'redis'
+
+   ey_cloud_report "Redis" do
+      message "Enable Redis"
+  end
+
 
     sysctl "Enable Overcommit Memory" do
       variables 'vm.overcommit_memory' => 1
@@ -74,7 +79,7 @@ if ['util'].include?(node[:instance_role])
     execute "monit reload" do
       action :run
     end
-  end
+  #end
 end
 
 if ['solo', 'app', 'app_master', 'util'].include?(node[:instance_role])

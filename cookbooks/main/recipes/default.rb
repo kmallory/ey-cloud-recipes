@@ -64,7 +64,7 @@ include_recipe "sidekiq"
 # include_recipe "resque"
 
 #uncomment to run redis.yml recipe
-#include_recipe "redis-yml"
+include_recipe "redis-yml"
 
 #uncomment to run the resque-scheduler recipe
 #include_recipe "resque-scheduler"
@@ -75,7 +75,7 @@ include_recipe "redis"
 #uncomment to run the api-keys-yml recipe
 # include_recipe "api-keys-yml"
 
-#include_recipe "logrotate"
+include_recipe "logrotate"
 #
 #uncomment to use the solr recipe
 #include_recipe "solr"

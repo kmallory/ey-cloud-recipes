@@ -64,7 +64,7 @@ include_recipe "sidekiq"
 # include_recipe "resque"
 
 #uncomment to run redis.yml recipe
-include_recipe "redis-yml"
+#include_recipe "redis-yml"
 
 #uncomment to run the resque-scheduler recipe
 #include_recipe "resque-scheduler"
@@ -85,7 +85,6 @@ include_recipe "logrotate"
 #uncomment to set environment variables in passenger or unicorn
 # Set environment variables as specified in cookbooks/env_vars/attributes/env_vars.rb
 include_recipe "env_vars"
-
 
 #uncomment to include the mysql_replication_check recipe
 #include_recipe "mysql_replication_check"

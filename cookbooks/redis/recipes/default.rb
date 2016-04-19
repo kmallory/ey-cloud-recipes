@@ -3,14 +3,10 @@
 # Recipe:: default
 #
 
-if ['util'].include?(node[:instance_role])
-  #if node[:name] == 'redis'
-
+if ['solo', 'app', 'app_master', 'util'].include?(node[:instance_role])
    ey_cloud_report "Redis" do
       message "Enable Redis"
   end
-
-
     sysctl "Enable Overcommit Memory" do
       variables 'vm.overcommit_memory' => 1
     end

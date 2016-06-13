@@ -3,8 +3,8 @@
 # Recipe:: default
 #
 
- collectd do
-   load :warning => 5, :failure => 8
+# collectd do
+#   load :warning => 4, :failure => 8
 #   db_space ['1.3GB', '500MB']
 #   data_space [3000000000, 1500000000]
 #   root_space :warning => '1245MB', :failure => '500MB'

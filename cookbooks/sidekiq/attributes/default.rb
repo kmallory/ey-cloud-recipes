@@ -25,9 +25,8 @@ default[:sidekiq] = {
   },
 
   # Verbose
-  :verbose => true
+  :verbose => true,
 
-  # limit
   :limits => {
   :coi => 2}
 }

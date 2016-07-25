@@ -14,7 +14,7 @@ default[:sidekiq] = {
   :workers => 1,
 
   # Concurrency
-  :concurrency => 25,
+  :concurrency => 5,
 
   # Queues
   :queues => {
@@ -26,4 +26,8 @@ default[:sidekiq] = {
 
   # Verbose
   :verbose => true
+
+  # limit
+  :limits => {
+  :coi => 2}
 }

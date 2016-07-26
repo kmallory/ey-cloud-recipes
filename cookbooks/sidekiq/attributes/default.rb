@@ -21,12 +21,12 @@ default[:sidekiq] = {
     # :queue_name => priority
     :default => 2,
     :mailers => 1,
-    :coi => 2
+    :coi => 1
   },
 
   # Verbose
   :verbose => true,
 
   :limits => {
-  :coi => 2}
+  :coi => 1}
 }

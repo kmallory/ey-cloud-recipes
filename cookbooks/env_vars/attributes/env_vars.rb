@@ -9,5 +9,6 @@ default[:env_vars] = {
   :RUBY_GC_MALLOC_LIMIT => "8000000",
   :RUBY_HEAP_FREE_MIN => "4096",
   :SIDEKIQ_USERNAME => "side",
-  :SIDEKIQ_PASSWORD => "kiq"
+  :SIDEKIQ_PASSWORD => "kiq",
+  :REDIS_CACHE_URL => 'redis://127.0.0.1:6379/0/cache'
 }

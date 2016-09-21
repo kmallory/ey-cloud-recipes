@@ -10,5 +10,5 @@ default[:env_vars] = {
   :RUBY_HEAP_FREE_MIN => "4096",
   :SIDEKIQ_USERNAME => "side",
   :SIDEKIQ_PASSWORD => "kiq",
-  :REDIS_CACHE_URL => 'redis://127.0.0.1:6379/0/cache'
+  :REDIS_CACHE_URL => 'redis://redis_instance:6379/0/cache'
 }

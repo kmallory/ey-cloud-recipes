@@ -11,5 +11,5 @@ default[:env_vars] = {
   :SIDEKIQ_USERNAME => "side",
   :SIDEKIQ_PASSWORD => "kiq",
   :REDIS_CACHE_URL => 'redis://redis_instance:6379/0/cache',
-  :SESSION_DAYS_TRIM_THRESHOLD => 14
+  :SESSION_DAYS_TRIM_THRESHOLD => 7
 }
